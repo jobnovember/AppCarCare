@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:padding="10dp"
+                style="@style/Headder"
+                android:text="@string/register"/>
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_account_circle_black"/>
+
+            <GridLayout
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                style="@style/Card">
+
+                <EditText
+                    android:id="@+id/TextEmail"
+                    style="@style/Input"
+                    android:background="@drawable/input"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"/>
+
+                <EditText
+                    android:id="@+id/TextPassword"
+                    style="@style/Input"
+                    android:background="@drawable/input"
+                    android:inputType="textPassword"
+                    android:hint="Password"/>
+
+                <EditText
+                    android:id="@+id/TextRePassword"
+                    style="@style/Input"
+                    android:background="@drawable/input"
+                    android:inputType="textPassword"
+                    android:hint="Re-Password"/>
+
+            </GridLayout>
+            <Button
+                android:id="@+id/buttonRegister"
+                style="@style/Button"
+                android:background="@drawable/button"
+                android:text="Create Account"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

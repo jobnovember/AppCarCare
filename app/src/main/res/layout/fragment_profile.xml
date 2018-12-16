@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Headder"
+                android:text="ข้อมูลส่วนตัว"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                style="@style/Card">
+
+                <TextView
+                    style="@style/subText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"/>
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/list_text"
+                    android:background="@drawable/list_data"
+                    android:paddingTop="10dp"
+                    android:text="Name"/>
+
+                <TextView
+                    style="@style/subText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone" />
+                <TextView
+                    android:id="@+id/phone"
+                    style="@style/list_text"
+                    android:background="@drawable/list_data"
+                    android:paddingTop="10dp"
+                    android:text="Phone Number"/>
+
+                <TextView
+                    style="@style/subText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cars" />
+                <Button
+                    android:id="@+id/InputBtn"
+                    style="@style/Button"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="manage your cars"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

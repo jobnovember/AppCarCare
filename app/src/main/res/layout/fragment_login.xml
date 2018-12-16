@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Headder"
+        android:padding="10dp"
+        android:text="@string/login"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/card"
+        style="@style/Card">
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/input"
+            style="@style/Input"
+            android:hint="Email"/>
+        <EditText
+            android:id="@+id/editPassword"
+            android:inputType="textPassword"
+            android:background="@drawable/input"
+            style="@style/Input"
+            android:hint="Password"/>
+
+    </GridLayout>
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/Button"
+        android:background="@drawable/button"
+        android:text="login" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/line"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:text="@string/loginRecommend"
+        />
+
+
+
+</LinearLayout>
